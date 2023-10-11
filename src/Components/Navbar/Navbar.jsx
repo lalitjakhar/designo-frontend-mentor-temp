@@ -10,6 +10,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Home from "../Home/Home";
 
 const pages = ["OUR COMPANY", "LOCATIONS", "CONTACT"];
 
@@ -141,7 +142,9 @@ const ResponsiveAppBar = () => {
             </Box>
           </Toolbar>
         </AppBar>
-        
+        <Home/>
+
+
       </Container>
     </>
   );
