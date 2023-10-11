@@ -46,7 +46,7 @@ export default function Home() {
             </Button>
           </Box>
         </Box>
-        <Box sx={{ marginRight: "-25px" }}>
+        <Box sx={{marginLeft:'-20px'}}>
           <img
             src="https://www.transparentpng.com/thumb/-iphone-x/DTctGB-iphone-transparent-shop.png"
             alt="Ä°phone x transparent background download showing lock screen @transparentpng.com"

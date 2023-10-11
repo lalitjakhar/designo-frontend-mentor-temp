@@ -14,24 +14,60 @@ export const Projects = () => {
         }}
       >
         <Grid container spacing={2} columns={12}>
-          <Grid item xs={6}>
-            <Box className="projects_image_first">
-              <Typography variant="h3" sx={{ color: "white" }}>
-                WEB DESIGN
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Box sx={{ display: "block" }}>
-              <Box className="projects_image_second">
+          <Grid item xs={12} md={6}>
+            <Box
+              className="projects_image_first"
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Box sx={{ display: "block" }}>
                 <Typography variant="h3" sx={{ color: "white" }}>
                   WEB DESIGN
+                </Typography>
+                <Typography variant="h6" sx={{ color: "white" }}>
+                  VEIW PROJECTS
                 </Typography>
               </Box>
-              <Box className="projects_image_third">
-                <Typography variant="h3" sx={{ color: "white" }}>
-                  WEB DESIGN
-                </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Box sx={{ display: "block" }}>
+              <Box
+                className="projects_image_second"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Box sx={{ display: "block" }}>
+                  <Typography variant="h3" sx={{ color: "white" }}>
+                    APP DESIGN
+                  </Typography>
+                  <Typography variant="h6" sx={{ color: "white" }}>
+                    VEIW PROJECTS
+                  </Typography>
+                </Box>
+              </Box>
+              <Box
+                className="projects_image_third"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Box sx={{ display: "block" }}>
+                  <Typography variant="h3" sx={{ color: "white" }}>
+                    GRAPHIC DESIGN
+                  </Typography>
+                  <Typography variant="h6" sx={{ color: "white" }}>
+                    VEIW PROJECTS
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -40,47 +76,3 @@ export const Projects = () => {
     </>
   );
 };
-
-{
-  /* <Box
-        sx={{
-          marginTop: "5rem",
-          marginBottom: "5rem",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <Box className="projects_image_first">
-          <Box 
-          sx={{
-            display:'flex',
-            justifyContent:'center',
-            alignItems:'center'
-          }}>
-            <Typography variant="h3"
-            sx={{color:'white'}}>WEB DESIGN</Typography>
-          </Box>
-        </Box>
-        <Box sx={{ display: "block" }}>
-          <Box>
-            <img
-              src={Project2}
-              alt=""
-              style={{ width: "530px", height: "328px", borderRadius: "20px" }}
-            />
-          </Box>
-          <Box>
-            <img
-              src={Projects3}
-              alt=""
-              style={{
-                marginTop: "28px",
-                width: "530px",
-                height: "300px",
-                borderRadius: "20px",
-              }}
-            />
-          </Box>
-        </Box>
-      </Box> */
-}

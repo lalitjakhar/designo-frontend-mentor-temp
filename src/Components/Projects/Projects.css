@@ -3,17 +3,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 580px;
-  height: 650px;
+  height: 672px;
   border-radius: 20px;
+  filter: grayscale(100%);
 }
 .projects_image_second {
   background-image: url(../../Assets/Projects2.jpg);
+  filter: grayscale(100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  width: 530px;
   height: 328px;
 }
 .projects_image_third {
@@ -22,6 +22,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  width: 530px;
   height: 328px;
+  margin-top: 16px;
+  filter: grayscale(100%);
 }
