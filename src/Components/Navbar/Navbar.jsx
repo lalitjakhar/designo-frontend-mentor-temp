@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Home from "../Home/Home";
+import { Projects } from "../Projects/Projects";
 
 const pages = ["OUR COMPANY", "LOCATIONS", "CONTACT"];
 
@@ -143,6 +144,7 @@ const ResponsiveAppBar = () => {
           </Toolbar>
         </AppBar>
         <Home/>
+        <Projects />
 
 
       </Container>

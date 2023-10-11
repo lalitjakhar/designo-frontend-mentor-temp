@@ -1,0 +1,27 @@
+.projects_image_first {
+  background-image: url(../../Assets/Projects1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 580px;
+  height: 650px;
+  border-radius: 20px;
+}
+.projects_image_second {
+  background-image: url(../../Assets/Projects2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 530px;
+  height: 328px;
+}
+.projects_image_third {
+  background-image: url(../../Assets/Projects3.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 530px;
+  height: 328px;
+}
