@@ -144,11 +144,6 @@ const ResponsiveAppBar = () => {
             </Box>
           </Toolbar>
         </AppBar>
-        <Home/>
-        <Projects />
-        <Objectives />
-
-
       </Container>
     </>
   );
