@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Home from "../Home/Home";
 import { Projects } from "../Projects/Projects";
+import {Objectives} from '../Objectives/Objectives';
 
 const pages = ["OUR COMPANY", "LOCATIONS", "CONTACT"];
 
@@ -145,6 +146,7 @@ const ResponsiveAppBar = () => {
         </AppBar>
         <Home/>
         <Projects />
+        <Objectives />
 
 
       </Container>
