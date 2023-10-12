@@ -1,15 +1,15 @@
 .projects_image_first {
-  background-image: url(../../Assets/Projects1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../../Assets/Projects1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 672px;
   border-radius: 20px;
-  filter: grayscale(100%);
+  filter: drop-shadow(2px 4px 6px black);
 }
 .projects_image_second {
-  background-image: url(../../Assets/Projects2.jpg);
-  filter: grayscale(100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../../Assets/Projects2.jpg);
+  filter: drop-shadow(2px 4px 6px black);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,12 +17,12 @@
   height: 328px;
 }
 .projects_image_third {
-  background-image: url(../../Assets/Projects3.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../../Assets/Projects3.avif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
   height: 328px;
   margin-top: 16px;
-  filter: grayscale(100%);
+  filter: drop-shadow(2px 4px 6px black);
 }

@@ -3,13 +3,14 @@ import "../Projects/Projects.css";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 
 export const Projects = () => {
   return (
     <>
       <Box
         sx={{
-          marginTop: "5rem",
+          marginBlock: "5rem",
           display: "flex",
         }}
       >
@@ -21,6 +22,7 @@ export const Projects = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                textAlign: "center",
               }}
             >
               <Box sx={{ display: "block" }}>
@@ -29,12 +31,20 @@ export const Projects = () => {
                 </Typography>
                 <Typography variant="h6" sx={{ color: "white" }}>
                   VEIW PROJECTS
+                  <ArrowForwardIosOutlinedIcon
+                    sx={{
+                      color: "#ffbc00",
+                      alignContent: "baseline",
+                      fontSize: "17px",
+                      paddingLeft: "5px",
+                    }}
+                  />
                 </Typography>
               </Box>
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box sx={{ display: "block" }}>
+            <Box sx={{ display: "block", textAlign: "center" }}>
               <Box
                 className="projects_image_second"
                 sx={{
@@ -49,6 +59,14 @@ export const Projects = () => {
                   </Typography>
                   <Typography variant="h6" sx={{ color: "white" }}>
                     VEIW PROJECTS
+                    <ArrowForwardIosOutlinedIcon
+                      sx={{
+                        color: "#ffbc00",
+                        alignContent: "baseline",
+                        fontSize: "17px",
+                        paddingLeft: "5px",
+                      }}
+                    />
                   </Typography>
                 </Box>
               </Box>
@@ -66,6 +84,14 @@ export const Projects = () => {
                   </Typography>
                   <Typography variant="h6" sx={{ color: "white" }}>
                     VEIW PROJECTS
+                    <ArrowForwardIosOutlinedIcon
+                      sx={{
+                        color: "#ffbc00",
+                        alignContent: "baseline",
+                        fontSize: "17px",
+                        paddingLeft: "5px",
+                      }}
+                    />
                   </Typography>
                 </Box>
               </Box>
