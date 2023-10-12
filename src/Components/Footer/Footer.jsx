@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import Adb from "@mui/icons-material/Adb";
 
 export const Footer = () => {
   return (
@@ -16,12 +17,12 @@ export const Footer = () => {
             padding: "3rem",
           }}
         >
-          <Grid container spacing={3}>
-            <Grid item xs={6}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={6} lg={6}>
               <Box sx={{ padding: "2rem" }}>
                 <Typography
-                  variant="h3"
-                  sx={{ fontSize: "2.8rem", fontWeight: "500", color: "white" }}
+                  variant="h4"
+                  sx={{ fontSize: "40px", fontWeight: "500", color: "white" }}
                 >
                   Let’s talk about your project
                 </Typography>
@@ -34,8 +35,13 @@ export const Footer = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs>
-              <Box sx={{display:'flex', justifyContent:'end',paddingTop:'5rem'}}>
+            <Grid item xs={12} md={6} lg={6} sx={{ margin: "auto" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "end",
+                }}
+              >
                 <Button
                   variant="contained"
                   sx={{
@@ -51,7 +57,76 @@ export const Footer = () => {
           </Grid>
         </Box>
       </Container>
-      <Box container sx={{ background: "black", height: "400px" }}></Box>
+      <Box container sx={{ background: "black", height: "400px" }}>
+        <Container
+          maxWidth="lg"
+          sx={{
+            paddingTop: "9rem",
+            color: "white",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <Grid container>
+              <Grid item xs={12} md={6} lg={6}>
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Adb sx={{ marginRight: "10px" }} />
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      fontFamily: "monospace",
+                      fontWeight: 600,
+                      letterSpacing: ".3rem",
+                      color: "inherit",
+                      textDecoration: "none",
+                    }}
+                  >
+                    DESIGNO
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} lg={6}>
+                <Box
+                  sx={{
+                    display: {
+                      xs: "block",
+                      sm: "flex",
+                      md: "flex",
+                      lg: "flex",
+                    },
+                    alignItems: {
+                      sm: "center",
+                      md: "center",
+                      lg: "center",
+                    },
+                    justifyContent: {
+                      sm: "flex-start",
+                      md: "flex-start",
+                      lg: "flex-end",
+                    },
+                  }}
+                >
+                  <Box sx={{ marginRight: "10px" }}>
+                    <a href="">OUR COMPANY</a>
+                  </Box>
+                  <Box sx={{ marginRight: "10px" }}>
+                    <a href="">LOCATIONS</a>
+                  </Box>
+                  <Box sx={{ marginRight: "10px" }}>
+                    <a href="">CONTACT</a>
+                  </Box>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </Container>
+      </Box>
     </>
   );
 };
+export default Footer;
