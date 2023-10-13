@@ -13,6 +13,7 @@ export const Routing = () => {
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/objectives" element={<Objectives />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
