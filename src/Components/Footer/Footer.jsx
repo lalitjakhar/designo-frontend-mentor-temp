@@ -59,6 +59,9 @@ export const Footer = () => {
                     padding: "13px 44px",
                     backgroundColor: "white",
                     color: "black",
+                    "&:hover": {
+                      backgroundColor: "#ffffff80",
+                    },
                   }}
                 >
                   GET IN TOUCH
