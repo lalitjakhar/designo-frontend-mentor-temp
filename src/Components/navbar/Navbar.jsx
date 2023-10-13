@@ -7,16 +7,14 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
+
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Home from "../Home/Home";
-import { Projects } from "../Projects/Projects";
-import {Objectives} from '../Objectives/Objectives';
+import { useNavigate } from "react-router-dom";
 
-const pages = ["OUR COMPANY", "LOCATIONS", "CONTACT"];
-
-const ResponsiveAppBar = () => {
+const Navbar = () => {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -95,11 +93,17 @@ const ResponsiveAppBar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
+                <MenuItem
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography textAlign="center">OUR COMPANY</Typography>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">LOCATIONS</Typography>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">CONTACT</Typography>
+                </MenuItem>
               </Menu>
             </Box>
             <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -107,7 +111,7 @@ const ResponsiveAppBar = () => {
               variant="h4"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
@@ -132,15 +136,22 @@ const ResponsiveAppBar = () => {
                 },
               }}
             >
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block" }}
-                >
-                  {page}
-                </Button>
-              ))}
+              <Button
+                sx={{ my: 2, color: "black", display: "block" }}
+              >
+                OUR COMPANY
+              </Button>
+              <Button
+                sx={{ my: 2, color: "black", display: "block" }}
+              >
+                LOCATIONS
+              </Button>
+              <Button
+                sx={{ my: 2, color: "black", display: "block" }}
+                onClick={() => navigate("/contact")}
+              >
+                CONTACT
+              </Button>
             </Box>
           </Toolbar>
         </AppBar>
@@ -148,4 +159,4 @@ const ResponsiveAppBar = () => {
     </>
   );
 };
-export default ResponsiveAppBar;
+export default Navbar;

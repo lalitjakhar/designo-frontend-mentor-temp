@@ -1,10 +1,11 @@
 import React from "react";
-import "../Projects/Projects.css";
+import "../projects/Projects.css";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
-import { Container } from "@mui/material"
+import { Container } from "@mui/material";
+
 const Projects = () => {
   return (
     <>

@@ -22,7 +22,7 @@ export default function Home() {
           }}
         >
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} lg={8}>
               <Box sx={{ display: "block" }}>
                 <Box>
                   <Typography
@@ -59,10 +59,8 @@ export default function Home() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Box sx={{ position: "relative"}}>
-                <img src={Iphone} alt="" />
-              </Box>
+            <Grid item xs={12} lg={4}>
+              <img src={Iphone} alt="" />
             </Grid>
           </Grid>
         </Box>
