@@ -23,7 +23,7 @@ export const Footer = () => {
             padding: "3rem",
           }}
         >
-          <Grid container spacing={5}>
+          <Grid container spacing={2}>
             <Grid item xs={12} md={6} lg={6}>
               <Box sx={{ padding: "2rem" }}>
                 <Typography
