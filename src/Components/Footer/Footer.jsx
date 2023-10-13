@@ -1,6 +1,12 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import Adb from "@mui/icons-material/Adb";
+import { Divider } from "@mui/material";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export const Footer = () => {
   return (
@@ -57,7 +63,7 @@ export const Footer = () => {
           </Grid>
         </Box>
       </Container>
-      <Box container sx={{ background: "black", height: "400px" }}>
+      <Box container sx={{ background: "black" }}>
         <Container
           maxWidth="lg"
           sx={{
@@ -111,15 +117,60 @@ export const Footer = () => {
                     },
                   }}
                 >
-                  <Box sx={{ marginRight: "10px" }}>
-                    <a href="">OUR COMPANY</a>
-                  </Box>
-                  <Box sx={{ marginRight: "10px" }}>
-                    <a href="">LOCATIONS</a>
-                  </Box>
-                  <Box sx={{ marginRight: "10px" }}>
-                    <a href="">CONTACT</a>
-                  </Box>
+                  <Typography sx={{ padding: "10px" }}>OUR COMPANY</Typography>
+                  <Typography sx={{ padding: "10px" }}>LOCATIONS</Typography>
+                  <Typography sx={{ padding: "10px" }}>CONTACT</Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+          <Divider sx={{ borderColor: "#ffffff1a", marginBlock: "2rem" }} />
+        </Container>
+        <Container
+          maxWidth="lg"
+          sx={{
+            color: "#ffffff80",
+          }}
+        >
+          <Box sx={{ paddingBlock: "3rem" }}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={6} lg={4}>
+                <Box sx={{ display: "block" }}>
+                  <Typography sx={{fontWeight:'700'}}>Designo Central Office</Typography>
+                  <Typography>3886 Wellington Street</Typography>
+                  <Typography>Toronto, Ontario M9C 3J5</Typography>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} lg={4}>
+                <Box sx={{ display: "block" }}>
+                  <Typography sx={{fontWeight:'700'}}>Contact Us (Central Office)</Typography>
+                  <Typography>P : +1 253-863-8967</Typography>
+                  <Typography>M : contact@designo.co</Typography>
+                </Box>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                lg={4}
+                sx={{
+                  display: "flex",
+                  alignItems: "end",
+                  justifyContent: {
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-end",
+                  },
+                }}
+              >
+                <Box>
+                  <FacebookRoundedIcon
+                    sx={{ color: "coral", marginRight: "10px" }}
+                  />
+                  <YouTubeIcon sx={{ color: "coral", marginRight: "10px" }} />
+                  <TwitterIcon sx={{ color: "coral", marginRight: "10px" }} />
+                  <PinterestIcon sx={{ color: "coral", marginRight: "10px" }} />
+                  <InstagramIcon sx={{ color: "coral", marginRight: "10px" }} />
                 </Box>
               </Grid>
             </Grid>
