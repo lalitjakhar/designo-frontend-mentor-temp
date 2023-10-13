@@ -45,7 +45,12 @@ export const Footer = () => {
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "end",
+                  alignItems: "end",
+                  justifyContent: {
+                    sm: "flex-start",
+                    md: "flex-end",
+                    lg: "flex-end",
+                  },
                 }}
               >
                 <Button
