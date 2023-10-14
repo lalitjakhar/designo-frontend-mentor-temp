@@ -16,10 +16,13 @@ const Location = () => {
             columns={{ xs: 4, sm: 6, md: 12 }}
             spacing={{ xs: 2, sm: 3, md: 4 }}
           >
-            <Grid item xs={12} sm={8} md={8}>
+            <Grid item xs={12} sm={8} md={8} sx={{order: {xs: 2, sm: 1}}}>
               <Box
                 sx={{
                   padding: "5.7rem",
+                  '@media (max-width: 600px)': {
+                    padding: '1rem'
+                  },
                   backgroundColor: "#f1c7c790",
                   borderRadius: "1rem",
                   alignContent: "center",
@@ -61,12 +64,16 @@ const Location = () => {
                 </Grid>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={4}>
+            <Grid item xs={12} sm={8} md={4} >
               <Box>
                 <img
                   src={Australiamap}
                   alt=""
-                  style={{width:'100%',height:'325px', borderRadius: "1rem" }}
+                  style={{
+                    width: "100%",
+                    height: "325px",
+                    borderRadius: "1rem",
+                  }}
                 />
               </Box>
             </Grid>
@@ -78,13 +85,24 @@ const Location = () => {
           <Grid container columns={12} spacing={4}>
             <Grid item xs={12} sm={12} md={4}>
               <Box>
-                <img src={Canadamap} alt="" style={{height:'325px',width:'100%', borderRadius: "1rem" }} />
+                <img
+                  src={Canadamap}
+                  alt=""
+                  style={{
+                    height: "325px",
+                    width: "100%",
+                    borderRadius: "1rem",
+                  }}
+                />
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={8}>
               <Box
                 sx={{
                   padding: "5.7rem",
+                  "@media (max-width: 600px)": {
+                    padding: "1rem",
+                  },
                   backgroundColor: "#f1c7c790",
                   borderRadius: "1rem",
                   alignContent: "center",
@@ -96,11 +114,15 @@ const Location = () => {
                 >
                   Australia
                 </Typography>
-                <Grid container spacing={1} sx={{
+                <Grid
+                  container
+                  spacing={1}
+                  sx={{
                     paddingTop: "1.5rem",
                     flexWrap: "nowrap",
                     flexDirection: { xs: "column", sm: "row" },
-                  }}>
+                  }}
+                >
                   <Grid item xs={12} md={12} lg={6}>
                     <Box sx={{ display: "block" }}>
                       <Typography sx={{ fontWeight: "700" }}>
@@ -132,10 +154,13 @@ const Location = () => {
             columns={{ xs: 4, sm: 6, md: 12 }}
             spacing={{ xs: 2, sm: 3, md: 4 }}
           >
-            <Grid item xs={12} sm={8} md={8}>
+            <Grid item xs={12} sm={8} md={8} sx={{order: {xs: 2, sm: 1}}}>
               <Box
                 sx={{
                   padding: "5.7rem",
+                  '@media (max-width: 600px)': {
+                    padding: '1rem'
+                  },
                   backgroundColor: "#f1c7c790",
                   borderRadius: "1rem",
                   alignContent: "center",
@@ -147,11 +172,15 @@ const Location = () => {
                 >
                   United Kingdom
                 </Typography>
-                <Grid container spacing={1} sx={{
+                <Grid
+                  container
+                  spacing={1}
+                  sx={{
                     paddingTop: "1.5rem",
                     flexWrap: "nowrap",
                     flexDirection: { xs: "column", sm: "row" },
-                  }}>
+                  }}
+                >
                   <Grid item xs={12} md={12} lg={6}>
                     <Box sx={{ display: "block" }}>
                       <Typography sx={{ fontWeight: "700" }}>
@@ -175,7 +204,15 @@ const Location = () => {
             </Grid>
             <Grid item xs={12} sm={8} md={4}>
               <Box>
-                <img src={UKmap} alt="" style={{height:'325px', width: '100%', borderRadius: "1rem" }} />
+                <img
+                  src={UKmap}
+                  alt=""
+                  style={{
+                    height: "325px",
+                    width: "100%",
+                    borderRadius: "1rem",
+                  }}
+                />
               </Box>
             </Grid>
           </Grid>
