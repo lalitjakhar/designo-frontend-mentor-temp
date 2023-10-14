@@ -50,7 +50,7 @@ const Navbar = () => {
               variant="h4"
               noWrap
               component="a"
-              href="/home"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -142,7 +142,7 @@ const Navbar = () => {
               </Button>
               <Button
                 sx={{ my: 2, color: "black", display: "block" }}
-                href="https://www.google.com/maps/dir/26.9024499,75.7487665/gohashinclude/@26.896624,75.7408959,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x396db5ffb32a7dfb:0xd43925c5f1e1beba!2m2!1d75.7421251!2d26.8907982?entry=ttu"
+                onClick={() => navigate("/location")}
               >
                 LOCATIONS
               </Button>

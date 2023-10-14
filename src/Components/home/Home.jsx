@@ -62,7 +62,7 @@ export default function Home() {
               </Box>
             </Grid>
             <Grid item xs={12} lg={4}>
-              <img src={Iphone} alt="" />
+              <img width={400} src={Iphone} alt="" />
             </Grid>
           </Grid>
         </Box>
