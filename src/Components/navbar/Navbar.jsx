@@ -11,7 +11,7 @@ import Contact from "../contact/Contact";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -93,9 +93,7 @@ const Navbar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem
-                  onClick={handleCloseNavMenu}
-                >
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">OUR COMPANY</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
@@ -138,11 +136,13 @@ const Navbar = () => {
             >
               <Button
                 sx={{ my: 2, color: "black", display: "block" }}
+                href="https://gohashinclude.com/"
               >
                 OUR COMPANY
               </Button>
               <Button
                 sx={{ my: 2, color: "black", display: "block" }}
+                href="https://www.google.com/maps/dir/26.9024499,75.7487665/gohashinclude/@26.896624,75.7408959,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x396db5ffb32a7dfb:0xd43925c5f1e1beba!2m2!1d75.7421251!2d26.8907982?entry=ttu"
               >
                 LOCATIONS
               </Button>
