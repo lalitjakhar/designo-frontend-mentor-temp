@@ -4,6 +4,8 @@ import { Typography } from "@mui/material";
 import { Button } from "@mui/material";
 import { Container, Grid } from "@mui/material";
 import Iphone from "../../Assets/Iphone.webp";
+import Projects from "../projects/Projects";
+import Objectives from "../objectives/Objectives";
 
 export default function Home() {
   return (
@@ -65,6 +67,8 @@ export default function Home() {
           </Grid>
         </Box>
       </Container>
+      <Projects />
+      <Objectives />
     </>
   );
 }
