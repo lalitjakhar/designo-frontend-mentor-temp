@@ -7,7 +7,6 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Contact from "../contact/Contact";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
@@ -136,7 +135,7 @@ const Navbar = () => {
             >
               <Button
                 sx={{ my: 2, color: "black", display: "block" }}
-                href="https://gohashinclude.com/"
+                onClick={() => navigate("/company")}
               >
                 OUR COMPANY
               </Button>

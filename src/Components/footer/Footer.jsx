@@ -137,7 +137,7 @@ export const Footer = () => {
                 >
                   <Typography sx={{ padding: "10px" }}>OUR COMPANY</Typography>
                   <Typography sx={{ padding: "10px" }}>LOCATIONS</Typography>
-                  <Typography sx={{ padding: "10px" }}>CONTACT</Typography>
+                  <Typography sx={{ padding: "10px" }} >CONTACT</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -185,7 +185,7 @@ export const Footer = () => {
                   <FacebookRoundedIcon
                     sx={{ color: "coral", marginRight: "10px" }}
                   />
-                  <YouTubeIcon sx={{ color: "coral", marginRight: "10px" }} />
+                  <YouTubeIcon sx={{ color: "coral", marginRight: "10px"}} />
                   <TwitterIcon sx={{ color: "coral", marginRight: "10px" }} />
                   <PinterestIcon sx={{ color: "coral", marginRight: "10px" }} />
                   <InstagramIcon sx={{ color: "coral", marginRight: "10px" }} />
