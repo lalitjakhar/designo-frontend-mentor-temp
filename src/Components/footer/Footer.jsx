@@ -16,7 +16,9 @@ export const Footer = () => {
   console.log(lastSegment);
   return (
     <>{
-      lastSegment == '' ? (
+      lastSegment == 'contact' ? (
+        null
+      ):(
       <Container
         maxWidth="lg"
         sx={{ marginBottom: "-7rem", position: "relative" }}
@@ -77,8 +79,6 @@ export const Footer = () => {
           </Grid>
         </Box>
       </Container>
-      ):(
-        null
       )
     }
       <Box container sx={{ background: "black" }}>
