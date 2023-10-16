@@ -3,7 +3,7 @@ import Tour from "../tour/Tour";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import Aboutuspic from "../../Assets/aboutus.webp";
 import Worldclass from "../../Assets/world-class-talent.webp";
-import Realdeal from "../../Assets/real-deal.webp"
+import Realdeal from "../../Assets/real-deal.webp";
 
 export default function Company() {
   return (
@@ -28,7 +28,7 @@ export default function Company() {
                 <Box>
                   <Typography
                     variant="h3"
-                    sx={{ fontSize: "48px", fontWeight: "500" }}
+                    sx={{ fontSize: "48px", fontWeight: "600" }}
                   >
                     About Us
                   </Typography>
@@ -97,7 +97,7 @@ export default function Company() {
                     variant="h3"
                     sx={{
                       fontSize: "48px",
-                      fontWeight: "500",
+                      fontWeight: "600",
                       color: "#e7816b",
                     }}
                   >
@@ -148,7 +148,11 @@ export default function Company() {
                 <Box>
                   <Typography
                     variant="h3"
-                    sx={{ fontSize: "48px", fontWeight: "500", color:'#e7816b' }}
+                    sx={{
+                      fontSize: "48px",
+                      fontWeight: "600",
+                      color: "#e7816b",
+                    }}
                   >
                     The real deal
                   </Typography>
