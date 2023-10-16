@@ -16,12 +16,12 @@ const Location = () => {
             columns={{ xs: 4, sm: 6, md: 12 }}
             spacing={{ xs: 2, sm: 3, md: 4 }}
           >
-            <Grid item xs={12} sm={8} md={8} sx={{order: {xs: 2, sm: 1}}}>
+            <Grid item xs={12} sm={8} md={8} sx={{ order: { xs: 2, sm: 1} }}>
               <Box
                 sx={{
                   padding: "5.7rem",
-                  '@media (max-width: 600px)': {
-                    padding: '1rem'
+                  "@media (max-width: 600px)": {
+                    padding: "1rem",
                   },
                   backgroundColor: "#f1c7c790",
                   borderRadius: "1rem",
@@ -64,7 +64,7 @@ const Location = () => {
                 </Grid>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={4} >
+            <Grid item xs={12} sm={8} md={4} sx={{ order: { xs: 1, sm: 2} }}>
               <Box>
                 <img
                   src={Australiamap}
@@ -154,12 +154,12 @@ const Location = () => {
             columns={{ xs: 4, sm: 6, md: 12 }}
             spacing={{ xs: 2, sm: 3, md: 4 }}
           >
-            <Grid item xs={12} sm={8} md={8} sx={{order: {xs: 2, sm: 1}}}>
+            <Grid item xs={12} sm={8} md={8} sx={{ order: { xs: 2, sm: 1 } }}>
               <Box
                 sx={{
                   padding: "5.7rem",
-                  '@media (max-width: 600px)': {
-                    padding: '1rem'
+                  "@media (max-width: 600px)": {
+                    padding: "1rem",
                   },
                   backgroundColor: "#f1c7c790",
                   borderRadius: "1rem",
@@ -202,7 +202,7 @@ const Location = () => {
                 </Grid>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={4}>
+            <Grid item xs={12} sm={8} md={4} sx={{ order: { xs: 1, sm: 2 } }}>
               <Box>
                 <img
                   src={UKmap}
