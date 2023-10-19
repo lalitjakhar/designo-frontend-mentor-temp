@@ -8,10 +8,10 @@ export default function Contact() {
     event.preventDefault();
 
     const formData = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      phone: event.target.phone.value,
-      message: event.target.message.value,
+      name: event.target.name,
+      email: event.target.email,
+      phone: event.target.phone,
+      message: event.target.message,
     };
     console.log("Form Data:", formData);
   };
